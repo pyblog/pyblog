@@ -17,6 +17,9 @@ DATABASES = {
         'PASSWORD': 'Cerebrum2010',                  # Not used with sqlite3.
         'HOST': '10.5.0.103',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
+        'OPTIONS':{
+            'init_command': 'SET storage_engine=INNODB'
+        }
     }
 }
 
